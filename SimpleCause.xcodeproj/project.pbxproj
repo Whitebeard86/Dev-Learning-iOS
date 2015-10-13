@@ -15,6 +15,7 @@
 		524D203D1BCD7DBB0098D570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524D203B1BCD7DBB0098D570 /* LaunchScreen.storyboard */; };
 		524D20481BCD7DBB0098D570 /* SimpleCauseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D20471BCD7DBB0098D570 /* SimpleCauseTests.m */; };
 		524D20531BCD7DBC0098D570 /* SimpleCauseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D20521BCD7DBC0098D570 /* SimpleCauseUITests.m */; };
+		524D20651BCD84940098D570 /* Cause.m in Sources */ = {isa = PBXBuildFile; fileRef = 524D20641BCD84940098D570 /* Cause.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		524D204E1BCD7DBC0098D570 /* SimpleCauseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCauseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524D20521BCD7DBC0098D570 /* SimpleCauseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCauseUITests.m; sourceTree = "<group>"; };
 		524D20541BCD7DBC0098D570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524D20631BCD84800098D570 /* Cause.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cause.h; sourceTree = "<group>"; };
+		524D20641BCD84940098D570 /* Cause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cause.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,9 @@
 		524D202C1BCD7DBB0098D570 /* SimpleCause */ = {
 			isa = PBXGroup;
 			children = (
+				524D20621BCD84480098D570 /* View */,
+				524D20611BCD843D0098D570 /* Controller */,
+				524D20601BCD84310098D570 /* Model */,
 				524D20301BCD7DBB0098D570 /* AppDelegate.h */,
 				524D20311BCD7DBB0098D570 /* AppDelegate.m */,
 				524D20331BCD7DBB0098D570 /* ViewController.h */,
@@ -138,6 +144,29 @@
 				524D20541BCD7DBC0098D570 /* Info.plist */,
 			);
 			path = SimpleCauseUITests;
+			sourceTree = "<group>";
+		};
+		524D20601BCD84310098D570 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				524D20631BCD84800098D570 /* Cause.h */,
+				524D20641BCD84940098D570 /* Cause.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		524D20611BCD843D0098D570 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		524D20621BCD84480098D570 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +302,7 @@
 				524D20351BCD7DBB0098D570 /* ViewController.m in Sources */,
 				524D20321BCD7DBB0098D570 /* AppDelegate.m in Sources */,
 				524D202F1BCD7DBB0098D570 /* main.m in Sources */,
+				524D20651BCD84940098D570 /* Cause.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +526,7 @@
 				524D20591BCD7DBC0098D570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		524D205A1BCD7DBC0098D570 /* Build configuration list for PBXNativeTarget "SimpleCauseTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +535,7 @@
 				524D205C1BCD7DBC0098D570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		524D205D1BCD7DBC0098D570 /* Build configuration list for PBXNativeTarget "SimpleCauseUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +544,7 @@
 				524D205F1BCD7DBC0098D570 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
