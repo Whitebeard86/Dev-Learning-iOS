@@ -7,3 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Cause.h"
+
+@implementation Cause
+
+@dynamic title;
+@dynamic description;
+@dynamic imageURL;
+
++ (NSString *) parseClassName {
+    return @"Cause";
+}
+
+@end
